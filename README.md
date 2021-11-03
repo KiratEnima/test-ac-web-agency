@@ -1,5 +1,10 @@
 AC Web Agency : Test de recrutement développeur sénior.
 
+Admin: admin@example.com / password
+User: user@example.com / password
+
+
+
 MAJ : 30/09/2021
 *****************************************************************
 

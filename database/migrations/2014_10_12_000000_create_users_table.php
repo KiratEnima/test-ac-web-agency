@@ -11,7 +11,7 @@ class CreateUsersTable extends Migration
      *
      * @return void
      */
-    public function upe()
+    public function up()
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->boolean('is_admin')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
@@ -29,7 +30,7 @@ class CreateUsersTable extends Migration
      *
      * @return void
      */
-    public function downe()
+    public function down()
     {
         Schema::dropIfExists('users');
     }
